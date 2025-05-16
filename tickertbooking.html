@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<center>
+<body>
+    <h2>Book Your Ticket</h2>
+    <form action="./booking congormed.html" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="fullname" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required title="Enter valid number"><br><br>
+
+      <label for="source">From:</label>
+      <select id="source" name="source">
+        <option value="city1">--select--</option>
+      
+        <option value="city1"> Hyderabad</option>
+        <option value="city2"> kolkata</option>
+        <option value="city1">kammam</option>
+        <option value="city2"> guntur</option>
+      </select><br><br>
+
+      <label for="destination">To:</label>
+      <select id="destination" name="destination">
+        <option value="city1">--select--</option>
+      
+        <option value="city1"> Hyderabad</option>
+        <option value="city2"> kolkata</option>
+        <option value="city1"> kammam</option>
+        <option value="city2"> guntur</option>
+      </select><br><br>
+
+      <label for="date">Journey Date:</label>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <label>Seat Type:</label><br>
+      <input type="radio" name="seat" value="AC" checked> AC
+      <input type="radio" name="seat" value="Non-AC"> Non-AC<br><br>
+
+      <label>Extras:</label><br>
+      <input type="checkbox" name="extras" value="snacks"> Snacks
+      <input type="checkbox" name="extras" value="water"> Water Bottle<br><br>
+
+      <input type="submit" value="Book Now">
+    </form>
+  </section>
+
+</body>
+</html>
